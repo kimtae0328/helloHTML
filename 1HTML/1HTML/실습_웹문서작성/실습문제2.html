@@ -6,11 +6,24 @@
   <title></title>
   <style>
     table, td, th {
-      border:1px solid #ccc;
+    /* CSS주석 
+      border: 테두리를 지정하는 속성 
+      1px : 두께 
+      solid : 실선 
+      border-collapse : 테이블과 셀을 분리 
+        collapse : 합치기 
+        separate : 분리(기본) 
+    */
+      border:1px solid#0f6eda;
       border-collapse: collapse;
     }
     td, th {
+      /* 테두리와 컨텐츠 사이의 공간 */
+      /* 상하 좌우 */
       padding:10px 20px;
+      /* 가운데정렬 */
+      text-align: center;
+      font-weight: 700;
     }
     td:last-child{
       width:200px;
@@ -18,8 +31,25 @@
   </style>
 </head>
 <body>
+  <!-- 실행취소 : ctrl + z -->
   <table>
-    
+    <tr>
+      <th rowspan="3">개인정보</th>
+      <td>이름</td>
+      <td>김태형</td>
+    </tr>
+    <tr>
+      <td>학과/학번</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>연락처</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>지원분야</td>
+      <td colspan="2"></td>
+    </tr>
   </table>
 </body>
 </html>
