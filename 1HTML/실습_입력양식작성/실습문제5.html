@@ -1,44 +1,41 @@
 <!doctype html>
 <html lang="ko">
+
 <head>
 	<meta charset="utf-8">
 	<title>예약 접수</title>
-	<!-- <style>
-		ul {
-			list-style:none;
-		}
-		li {
-			line-height:50px;
-		}
-		label {
-			width:60px;
-			float:left;
-		}
-	</style> -->
 	<style>
-     ul{
-		list-style: none;
-	 }
-	 li{
-		/*스타일 작성시 단위 작성 必*/
-		line-height: 30px;
-	 }
-	 label{
-		width: 150px;
-		display: inline-block; /*inline 속성은 넓이를 가질수있음*/
-		text-align: center;
-	 }
+		ul {
+			list-style: none;
+		}
 
+		li {
+			/*스타일 작성시 단위 작성 必*/
+			line-height: 30px;
+		}
+
+		label {
+			width: 150px;
+			display: inline-block;
+			/*inline 속성은 넓이를 가질수있음*/
+			text-align: center;
+		}
 	</style>
 </head>
+
 <body>
 	<h1>예약 정보</h1>
-	
+	<!-- from 시작태그와 끝태그 사이에 있는 요소들을 서버로 전달
+	 	 name 속성이 정의된 항목만 전달(name속성이 없는경우 전달되지않음) -->
 
 	<label for="userID">아이디</label> <input type="text" name="userID"> <br><br>
 	<label for="userPW">휴대폰</label> <input type="text" name="userID"> <br><br>
 	<label for="email">이메일</label> <input type="email" name="email"> <br><br>
+	<input type="checkbox" name="hobby" value="B1">야구
+	<input type="checkbox" name="hobby" value="B2">농구
+	<input type="checkbox" name="hobby" value="S">축구 <br><br>
 	<button>예약하기</button>
 
 </body>
+
 </html>
